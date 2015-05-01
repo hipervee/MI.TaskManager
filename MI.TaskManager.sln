@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MI.TaskManager", "MI.TaskManager\MI.TaskManager.csproj", "{CCC21219-2139-4E1B-89D2-D6773F6DE350}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MI.TaskManager.Entities", "MI.TaskManager.Entities\MI.TaskManager.Entities.csproj", "{51DD775A-765B-4B8B-8048-1AD12B567F18}"
