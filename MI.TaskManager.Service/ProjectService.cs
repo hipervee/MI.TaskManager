@@ -32,11 +32,9 @@ namespace MI.TaskManager.Service
             _repository = repository;
         }
 
-
         public IEnumerable<Project> GetAll()
         {
-            _repository.GetAll();
-            return null;
+            return _repository.GetAll();
         }
     }
 }
