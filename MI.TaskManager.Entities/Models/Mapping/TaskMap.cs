@@ -13,6 +13,8 @@ namespace MI.TaskManager.Entities.Models.Mapping
                 .HasMaxLength(250);
             this.Property(t => t.Description)
                 .HasMaxLength(250);
+            this.Property(t => t.TaskTypeId)
+                .IsRequired();
 
             // Table & Column Mappings
             this.ToTable("Tasks");
