@@ -19,11 +19,15 @@ namespace MI.TaskManager.Entities.Models
 
         public DbSet<Project> Projects { get; set; }
         public DbSet<Task> Tasks { get; set; }
+        public DbSet<TaskType> TaskTypes { get; set; }
+        public DbSet<ProjectToTask> ProjectToTasks { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new ProjectMap());
             modelBuilder.Configurations.Add(new TaskMap());
+            modelBuilder.Configurations.Add(new TaskTypeMap());
+            modelBuilder.Configurations.Add(new ProjectToTaskMap());
         }
     }
 }

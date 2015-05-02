@@ -59,6 +59,14 @@
     <Compile Include="Migrations\201505020621171_TablesAdded.Designer.cs">
       <DependentUpon>201505020621171_TablesAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201505020628364_TablesAddedNEw.cs" />
+    <Compile Include="Migrations\201505020628364_TablesAddedNEw.Designer.cs">
+      <DependentUpon>201505020628364_TablesAddedNEw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201505020635055_ContextUpdated.cs" />
+    <Compile Include="Migrations\201505020635055_ContextUpdated.Designer.cs">
+      <DependentUpon>201505020635055_ContextUpdated.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Mapping\TaskTypeMap.cs" />
     <Compile Include="Models\Mapping\ProjectToTaskMap.cs" />
@@ -97,6 +105,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201505020621171_TablesAdded.resx">
       <DependentUpon>201505020621171_TablesAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505020628364_TablesAddedNEw.resx">
+      <DependentUpon>201505020628364_TablesAddedNEw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505020635055_ContextUpdated.resx">
+      <DependentUpon>201505020635055_ContextUpdated.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
