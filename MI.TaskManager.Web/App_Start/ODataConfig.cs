@@ -1,4 +1,5 @@
-﻿using System.Web.Http;
+﻿using MI.TaskManager.Entities.Models;
+using System.Web.Http;
 using System.Web.Http.OData.Builder;
 
 namespace MI.TaskManager.Web
@@ -9,7 +10,7 @@ namespace MI.TaskManager.Web
         {
             ODataModelBuilder builder = new ODataConventionModelBuilder();
 
-            //builder.EntitySet<Entities.Models.Customer>(typeof(Entities.Models.Customer).Name);
+            builder.EntitySet<Project>(typeof(Entities.Models.Project).Name);
             //builder.EntitySet<Entities.Models.Order>(typeof(Entities.Models.Order).Name);
 
             //var orderDetailBuilder = builder.EntitySet<Entities.Models.OrderDetail>(typeof(Entities.Models.OrderDetail).Name);
@@ -27,10 +28,10 @@ namespace MI.TaskManager.Web
             //builder.EntitySet<Entities.Models.Employee>(typeof(Entities.Models.Employee).Name);
             //builder.EntitySet<Entities.Models.Shipper>(typeof(Entities.Models.Shipper).Name);
 
-            //var model = builder.GetEdmModel();
-            //config.Routes.MapODataRoute("odata", "odata", model);
-
-            //config.EnableQuerySupport();
+            var model = builder.GetEdmModel();
+            config.Routes.MapODataRoute("odata", "odata", model);
+ 
+            config.EnableQuerySupport();
         }
     }
 }
